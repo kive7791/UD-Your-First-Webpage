@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My First Webpage</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Heading Font: Bitcount Grid Single -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap"
+    rel="stylesheet">
+
+  <!-- Body Font: Merriweather (with Bitcount also available on this page) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
+    rel="stylesheet">
+
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="merriweather-body">
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark navbar-custom">
+    <div class="container-fluid page-wrap">
+      <a class="navbar-brand bitcount-grid-single-display" href="mailto:kive7791@colorado.edu">
+        <img src="Logo.jpg" alt="Kira Velez Logo" width="40" height="40" class="rounded-circle">
+        Kira Velez
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="mailto:kive7791@colorado.edu">Home</a>
+          </li>
+          <li class="nav-item">
+            <!-- Dead end links for now -->
+            <a class="nav-link" href="resume.html">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="works.html">Works</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Title -->
+  <header class="page-wrap">
+    <h1 class="page-title bitcount-grid-single-display">About Me</h1>
+    <p class="muted">Prospective User Experience Researcher near Boulder, Colorado</p>
+  </header>
+
+  <main class="layout">
+    <!-- Image -->
+     <section class="hero-image">
+      <img src="Self-Portrait.jpg" class="media-cover" alt="Self-Portrait of the Author" width="400">
+      <!-- <figcaption class="muted">Self-portrait</figcaption> -->
+    </section>
+
+    <!-- Bio -->
+    <section class="bio">
+      <h2>Hi, I’m <span class="text-info">Kira Velez</span></h2>
+      <p>
+        I’m a prospective <strong>User Experience Researcher</strong> living near Boulder, Colorado.
+        When I’m not drawing, you’ll find me exploring new creative tools or learning another program.
+      </p>
+      <p>
+        I’m passionate about understanding how people interact with technology and designing experiences that
+        feel intuitive, inclusive, and meaningful. My curiosity drives me to analyze everyday interactions,
+        from website layouts to product usability, and think about how they could be made better for everyone.
+      </p>
+      <p>
+        I draw inspiration from both art and technology, blending creativity with analytical thinking to bring ideas to
+        life.
+        Whether sketching an interface concept, experimenting with design software, or conducting user research,
+        I love uncovering the “why” behind user behaviors.
+      </p>
+      <p>
+        Living near Boulder has connected me with a vibrant tech and design community that values innovation and
+        accessibility; two principles that shape how I approach every project.
+      </p>
+    </section>
+
+    <!-- Quick Links -->
+    <aside class="contact cardfx">
+      <h3 class="bitcount-grid-single-display">Get in touch</h3>
+      <ul class="list-unstyled m-0">
+        <li><a class="link-accent" href="mailto:kive7791@colorado.edu">kive7791@colorado.edu</a></li>
+        <li><a class="link-accent" href="resume.html">Resume</a></li>
+        <li><a class="link-accent" href="works.html">Selected Works</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer class="page-wrap">
+    <small>&copy; <span id="year"></span> Kira Velez. All rights reserved.</small>
+  </footer>
+
+</body>
+
+</html>
