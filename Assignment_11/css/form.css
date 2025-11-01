@@ -1,20 +1,97 @@
 @charset "UTF-8";
 
-
-/* form styling */
-
-
+/* layout */
 #wrapper {
-	width: 60%;
-	margin-left:4%;
+  width: 60%;
+  margin-left: 4%;
 }
 
 div#formcol1 {
-	float:left;	
-	width: 100%;
+  float: left;
+  width: 100%;
 }
 
+/* structure helpers */
+.instructions {
+  margin: 0 0 1rem;
+}
 
+fieldset {
+  border: 2px solid #ccc;
+  padding: 1rem 1.25rem 1.25rem;
+  margin: 0 0 1.5rem;
+}
 
-/* end of form css */
-	
+legend {
+  font-weight: 700;
+  padding: 0 .4rem;
+}
+
+label {
+  margin-right: 0.3em;
+  width: 10.5em;
+  display: inline-block;
+  text-align: right;
+}
+
+/* remove bullets */
+#formcol1 li {
+  list-style: none;
+  margin: 0 0 .6rem;
+}
+
+/* asterisk*/
+.req-asterisk {
+  color: #b00020;
+  margin-left: .2em;
+}
+
+/* required fields visual cue */
+#formcol1 input.reqfield {
+  background: #ff9; /* light yellow */
+}
+
+/* Radio button problem */
+/* radio choice spacing
+.choices {
+  margin: .25rem 0 .25rem;
+}
+.choice {
+  display: inline-flex;
+  align-items: center;
+  gap: .1rem;
+  margin-right: .1rem;
+} */
+
+/* A little confused what these still do */
+select:focus,
+select:active,
+input:focus,
+input:active,
+input:focus + label,
+input:active + label,
+label[for]:focus,
+label[for]:active {
+  color: #fff !important;
+  background-color: #BB3D2F !important;
+  outline: 2px solid #BB3D2F;
+  outline-offset: 2px;
+}
+
+/* improve visibility for keyboard users */
+input:focus,
+select:focus {
+  box-shadow: 0 0 0 3px rgba(187, 61, 47, 0.35);
+}
+
+/* submit button area */
+.submit-button {
+  margin-top: 1rem;
+}
+.submit-button input[type="submit"] {
+  padding: .6rem 1rem;
+  font-size: 1rem;
+  border-radius: .25rem;
+  border: 1px solid #444;
+  cursor: pointer;
+}
